@@ -1,8 +1,8 @@
 import argparse
-import os
+import os, sys
 import os.path as osp
 import warnings
-
+sys.path.append(osp.dirname(osp.abspath(osp.dirname(__file__))))
 import mmcv
 import torch
 from mmcv import Config, DictAction

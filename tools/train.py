@@ -1,6 +1,6 @@
 import argparse
 import copy
-import os
+import os,sys
 import os.path as osp
 import time
 import warnings
@@ -11,6 +11,7 @@ from mmcv import Config, DictAction
 from mmcv.runner import get_dist_info, init_dist, set_random_seed
 from mmcv.utils import get_git_hash
 
+sys.path.append(osp.dirname(osp.abspath(osp.dirname(__file__))))
 from mmaction import __version__
 from mmaction.apis import train_model
 from mmaction.datasets import build_dataset
