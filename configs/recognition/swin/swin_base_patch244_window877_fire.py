@@ -5,11 +5,11 @@ model=dict(backbone=dict(patch_size=(2,4,4), drop_path_rate=0.3), test_cfg=dict(
 
 # dataset settings
 dataset_type = 'RawframeDataset'
-data_root = 'data/hell/rawframes'
-data_root_val = 'data/hell/rawframes'
-ann_file_train = 'data/hell/hell_train_rawframes.txt'
-ann_file_val = 'data/hell/hell_val_rawframes.txt'
-ann_file_test = 'data/hell/hell_val_rawframes.txt'
+data_root = 'data/fire/rawframes'
+data_root_val = 'data/fire/rawframes'
+ann_file_train = 'data/fire/fire_train_rawframes.txt'
+ann_file_val = 'data/fire/fire_val_rawframes.txt'
+ann_file_test = 'data/fire/fire_val_rawframes.txt'
 
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_bgr=False)
@@ -107,7 +107,7 @@ total_epochs = 60
 
 # runtime settings
 checkpoint_config = dict(interval=1)
-work_dir = './work_dirs/hell_swin_base_patch244_window877.py'
+work_dir = './work_dirs/fire_swin_base_patch244_window877.py'
 find_unused_parameters = False
 
 
